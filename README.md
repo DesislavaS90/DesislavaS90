@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Desi
-- 🌱 I’m currently learning Web Development 
+- 🌱 I’m currently learning Python
 
 
 <!---
