@@ -1,37 +1,68 @@
 <div align="center">
-    
+
 ### 🚀 Hello, World! I'm Desi! 👋
-    
+
 </div>
 
-<img align='right' src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzNya3k1eTVyYm8yaHlvYWQ0YjVueGw1ZDVrNnQzbXcyMjU1cm82MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HscDLzkO8EOTmgkhQP/giphy.gif' width='250' style="margin: -40px;"> 
+```python
+class Developer:
+    def __init__(self, name):
+        self.name = name
+        self.current_study = "Web Development at SoftUni"
+        self.completed_courses = ["Python coursework"]
+        self.current_focus = "HTML & CSS fundamentals"
+        self.up_next = "Diving deep into JavaScript"
+        self.philosophy = "Continuous learning and self-improvement"
 
-- 🎓 **Studying:** Web Development at **SoftUni**.
-- ✅ **Completed:** Python coursework.
-- 🖥️ **Current Focus:** HTML & CSS fundamentals.
-- 🌐 **Up Next:** Diving deep into JavaScript.
-- 🌱 **Philosophy:** My journey in web development is about continuous learning and self-improvement.
+    def display_info(self):
+        print(f"🎓 Studying: {self.current_study}")
+        print(f"✅ Completed: {', '.join(self.completed_courses)}")
+        print(f"🖥️ Current Focus: {self.current_focus}")
+        print(f"🌐 Up Next: {self.up_next}")
+        print(f"🌱 Philosophy: {self.philosophy}")
 
-<br/>
+class SkillsLearningPath:
+    def __init__(self):
+        self.completed = "Python"
+        self.currently_studying = "HTML & CSS"
+        self.up_next = "JavaScript"
+    
+    def display_path(self):
+        print(f"🐍 Completed: {self.completed}")
+        print(f"🌍 Currently Studying: {self.currently_studying}")
+        print(f"🔜 Up Next: {self.up_next}")
 
----
+class Toolkit:
+    def __init__(self):
+        self.ides_editors = ["VS Code", "PyCharm"]
+        self.frameworks = ["Django"]
+        self.tools = ["Docker", "GitHub"]
+        self.learning_approach = "Always eager to explore and adopt new tools and technologies"
 
-### 🛠️ My Skills & Learning Path
+    def display_tools(self):
+        print(f"📝 IDEs & Editors: {', '.join(self.ides_editors)}")
+        print(f"🕸️ Frameworks: {', '.join(self.frameworks)}")
+        print(f"🧰 Tools: {', '.join(self.tools)}")
+        print(f"📈 Continuous Learning: {self.learning_approach}")
 
-- 🐍 **Completed:** Python
-- 🌍 **Currently Studying:** HTML & CSS
-- 🔜 **Up Next:** JavaScript
+class Projects:
+    def __init__(self):
+        self.projects = {
+            "PassKeeperApp": "My first foray into web development"
+        }
 
----
+    def display_projects(self):
+        for project, description in self.projects.items():
+            print(f"📌 {project}: {description}")
 
-### 🔧 Toolkit
+desi = Developer("Desi")
+desi.display_info()
 
-- 📝 **IDEs & Editors:** VS Code, PyCharm
-- 🕸️ **Frameworks:** Django
-- 🧰 **Tools:** Docker, GitHub
-- 📈 **Continuous Learning:** Always eager to explore and adopt new tools and technologies.
+skills = SkillsLearningPath()
+skills.display_path()
 
----
+toolkit = Toolkit()
+toolkit.display_tools()
 
-### 🖥️ My Projects
-- 📌 **PassKeeperApp**: My first foray into web development.
+projects = Projects()
+projects.display_projects()
