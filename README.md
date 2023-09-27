@@ -6,7 +6,7 @@
 
 <img align='right' src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzNya3k1eTVyYm8yaHlvYWQ0YjVueGw1ZDVrNnQzbXcyMjU1cm82MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HscDLzkO8EOTmgkhQP/giphy.gif' width='250' style="margin: -40px;"> 
 
-- 🎓 **Studying:** Web Development with Python at **SoftUni**.
+- 🎓 **Studying:** Web Development at **SoftUni**.
 - ✅ **Completed:** Python coursework.
 - 🖥️ **Current Focus:** HTML & CSS fundamentals.
 - 🌐 **Up Next:** Diving deep into JavaScript.
