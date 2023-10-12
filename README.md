@@ -36,7 +36,7 @@ class Toolkit:
     def __init__(self):
         self.ides_editors = ["VS Code", "PyCharm"]
         self.frameworks = ["Django"]
-        self.tools = ["Docker", "GitHub"]
+        self.tools = ["Docker", "Git/GitHub"]
         self.learning_approach = "Always eager to explore and adopt new tools and technologies"
 
     def display_tools(self):
