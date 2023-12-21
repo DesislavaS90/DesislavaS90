@@ -1,68 +1,79 @@
-<div align="center">
+```javascript
 
-### 🚀 Hello, World! I'm Desi! 👋
+class Developer {
+  constructor(name, education) {
+    this.name = name;
+    this.education = education;
+    this.role = "Aspiring Web Developer";
+    this.completedCourses = ["HTML", "CSS", "JavaScript", "Python"];
+    this.currentFocus = "Deepening JavaScript Knowledge";
+    this.upcomingFocus = "Studying React";
+    this.philosophy = "Committed to continuous learning and self-improvement";
+  }
 
-</div>
+  displayInfo() {
+    console.log(`<div align="center">\n`);
+    console.log(`# Hello, World! 👋 I'm ${this.name} 🚀`);
+    console.log(`${this.role} | Continuous Learner |`);
+    console.log("</div>\n");
 
-```python
-class Developer:
-    def __init__(self, name):
-        self.name = name
-        self.current_study = "Web Development at SoftUni"
-        self.completed_courses = ["Python coursework"]
-        self.current_focus = "HTML & CSS fundamentals"
-        self.up_next = "Diving deep into JavaScript"
-        self.philosophy = "Continuous learning and self-improvement"
+    console.log("## 📘 About Me");
+    console.log(`Hey there! I'm ${this.name}, currently on a journey of becoming a web developer. Enrolled in ${this.education}, my path is fueled by a commitment to continuous improvement. My education covers a wide range of topics, including front-end development (HTML, CSS, JavaScript) and back-end development (Python).\n`);
 
-    def display_info(self):
-        print(f"🎓 Studying: {self.current_study}")
-        print(f"✅ Completed: {', '.join(self.completed_courses)}")
-        print(f"🖥️ Current Focus: {self.current_focus}")
-        print(f"🌐 Up Next: {self.up_next}")
-        print(f"🌱 Philosophy: {self.philosophy}")
+    console.log("## 🚀 Current Focus");
+    console.log(`- **Studying:** ${this.education}`);
+    console.log(`- **Completed Courses:** ${this.completedCourses.join(', ')}`);
+    console.log(`- **Current Focus:** ${this.currentFocus}`);
+    console.log(`- **Up Next:** ${this.upcomingFocus}`);
+    console.log(`- **Philosophy:** ${this.philosophy}\n`);
+  }
+}
 
-class SkillsLearningPath:
-    def __init__(self):
-        self.completed = "Python"
-        self.currently_studying = "HTML & CSS"
-        self.up_next = "JavaScript"
-    
-    def display_path(self):
-        print(f"🐍 Completed: {self.completed}")
-        print(f"🌍 Currently Studying: {self.currently_studying}")
-        print(f"🔜 Up Next: {self.up_next}")
+class SkillsLearningPath {
+  constructor() {
+    this.completed = ["HTML", "CSS", "JavaScript", "Python"];
+    this.currentlyStudying = "Deepening JavaScript Knowledge";
+    this.upNext = "Studying React";
+  }
 
-class Toolkit:
-    def __init__(self):
-        self.ides_editors = ["VS Code", "PyCharm"]
-        self.frameworks = ["Django"]
-        self.tools = ["Docker", "Git/GitHub"]
-        self.learning_approach = "Always eager to explore and adopt new tools and technologies"
+  displayPath() {
+    console.log("## 🛠️ Tech Toolbox");
+    console.log(`- **Languages:** ${this.completed.join(', ')}, JavaScript, Python`);
+    console.log(`- **Tools:** VS Code, PyCharm, Docker, Git/GitHub`);
+    console.log(`- **Frameworks:** Django`);
+    console.log(`- **Learning Approach:** Always eager to explore and adopt new tools and technologies\n`);
+  }
+}
 
-    def display_tools(self):
-        print(f"📝 IDEs & Editors: {', '.join(self.ides_editors)}")
-        print(f"🕸️ Frameworks: {', '.join(self.frameworks)}")
-        print(f"🧰 Tools: {', '.join(self.tools)}")
-        print(f"📈 Continuous Learning: {self.learning_approach}")
+class Projects {
+  constructor() {
+    this.projects = {
+      PassKeeperApp: "My first foray into web development"
+    };
+  }
 
-class Projects:
-    def __init__(self):
-        self.projects = {
-            "PassKeeperApp": "My first foray into web development"
-        }
+  displayProjects() {
+    console.log("## 🚀 Projects");
+    for (const [project, description] of Object.entries(this.projects)) {
+      console.log(`- **${project}:** ${description}`);
+    }
+  }
+}
 
-    def display_projects(self):
-        for project, description in self.projects.items():
-            print(f"📌 {project}: {description}")
+class AdditionalInfo {
+  async display() {
+    console.log("\nLet's connect and learn together! 🌐");
+    console.log("Continuously expanding my skills in web development. Deepening understanding of JavaScript, with a focus on studying React. Python with Django is my primary language and framework, particularly in my main project.");
+  }
+}
 
-desi = Developer("Desi")
-desi.display_info()
+// Main Execution
+const developer = new Developer("Desi", "Web Development at SoftUni");
+const skills = new SkillsLearningPath();
+const projects = new Projects();
+const additionalInfo = new AdditionalInfo();
 
-skills = SkillsLearningPath()
-skills.display_path()
-
-toolkit = Toolkit()
-toolkit.display_tools()
-
-projects = Projects()
-projects.display_projects()
+developer.displayInfo();
+skills.displayPath();
+projects.displayProjects();
+additionalInfo.display();
